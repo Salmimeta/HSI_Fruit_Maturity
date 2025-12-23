@@ -1,11 +1,26 @@
 # Dataset
 
-This folder contains lightweight dataset metadata required to run the project.
+This repository does not store large hyperspectral data files.
 
-## Files
-- SpectroFood_dataset.csv  
-  Ground truth dry matter percentages for 240 apples.
+## Ground Truth (included)
+- `SpectroFood_dataset.csv`  
+  Contains dry matter (%) labels for apples.
 
-## Notes
-- Raw hyperspectral `.mat` / `.h5` files are not included due to size.
-- See the main README for download instructions and preprocessing steps.
+## External Hyperspectral Datasets (Zenodo)
+Download the raw data from the official Zenodo records:
+
+- Apple: https://zenodo.org/records/10301753
+- Broccoli: https://zenodo.org/records/10302386
+- Leek: https://zenodo.org/records/10302426
+- Mushroom: https://zenodo.org/records/10302438
+
+## Expected Local Structure
+After downloading and extracting, place data like this:
+
+dataset/raw/
+├── apple/
+├── broccoli/
+├── leek/
+└── mushroom/
+
+These files are ignored by Git and used locally for preprocessing.
